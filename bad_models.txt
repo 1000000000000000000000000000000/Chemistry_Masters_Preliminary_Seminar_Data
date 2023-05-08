@@ -1,0 +1,62 @@
+I got this error message when running the script to get DSSP and sol acc...
+
+"""
+Processing P0DTC9_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+
+invalid formatted floating point number '8.000-18'
+
+Processing P31645_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+
+invalid formatted floating point number '6.000-'
+
+Processing P63096_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+
+invalid formatted floating point number '.000-252'
+
+Processing Q96EB6_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+
+invalid formatted floating point number '52.000  '
+
+Processing Q9LT15_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+
+invalid formatted floating point number '.000-190'
+
+Processing P03034_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+
+invalid formatted floating point number '17  45.9'
+
+Processing P52751_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+
+invalid formatted floating point number '6 -61.36'
+
+Processing Q95211_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+
+invalid formatted floating point number '42  61.2'
+
+Processing Q95211_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+
+invalid formatted floating point number '632.000 '
+
+Processing O14641_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+
+invalid formatted floating point number '.750-277'
+
+Processing P10636_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+
+invalid formatted floating point number '043  1'
+
+Processing P23907_IT_model3.pdb in /home/rpearson/research/PosValSet/IT/output_models
+
+invalid formatted floating point number '69-81573'
+
+"""
+
+On May 07, 2023 re-ran all of these proteins in hopes to obtain better models. Oddly, only some of the run's models are effected.
+Some error causes the co-ordinates to become absurdly high in value out of the blue. An adjacent residue could have normal coords.
+
+If the re-run yields better models:
+	- run 3D_CNN evaluation
+	- make csv for the 3D_CNN evaluation
+	- run DSSP and ACC
+	- make csv for the dssp and acc
+
