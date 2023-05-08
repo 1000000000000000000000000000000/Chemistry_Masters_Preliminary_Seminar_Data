@@ -1,0 +1,1028 @@
+Python 3.9.12 (main, Apr  5 2022, 06:56:58) 
+[GCC 7.5.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> 
+>>> paths = ['/home/rpearson/research/23ValidationSet/CIT3/output_models', '/home/rpearson/research/23ValidationSet/ITResults2/output_models', '/home/rpearson/research/NegValSet/Q8K4Z5_short/CIT/output_models', '/home/rpearson/research/NegValSet/Q8K4Z5_short/IT/output_models', '/home/rpearson/research/NegValSet/CIT/output_models', '/home/rpearson/research/NegValSet/IT/output_models', '/home/rpearson/research/PosValSet/CIT/output_models', '/home/rpearson/research/PosValSet/IT/output_models', '/home/rpearson/AlphaFoldv2/alphafold-2.2.0/research/all_af2_models', '/home/rpearson/AlphaFoldv2/alphafold-2.2.0/research/all_rosettafold_models']
+>>> 
+>>> for path in paths:
+...     for file in os.listdir(path):
+...             if os.path.splitext(file)[1] == '.pdb':
+...                     print(f'Processing {file} in {path}')
+...                     os.system(f'pdb_to_dssp_and_acc.py {os.path.join(path, file)}')
+... 
+Processing O53512_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O53512_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O53512_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O53512_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O53512_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O60894_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O60894_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O60894_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O60894_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O60894_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P02925_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P02925_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P02925_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P02925_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P02925_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P03485_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P03485_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P03485_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P03485_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P03485_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P07900_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P07900_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P07900_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P07900_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P07900_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P08195_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P08195_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P08195_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P08195_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P08195_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DMV8_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DMV8_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DMV8_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DMV8_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DMV8_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC4_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC4_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC4_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC4_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC4_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC5_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC5_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC5_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC5_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC5_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC9_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC9_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC9_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC9_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P0DTC9_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P31645_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P31645_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P31645_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P31645_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P31645_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P35613_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P35613_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P35613_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P35613_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P35613_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P63096_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P63096_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P63096_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P63096_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing P63096_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q03431_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q03431_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q03431_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q03431_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q03431_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q15758_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q15758_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q15758_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q15758_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q15758_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q8IWU4_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q8IWU4_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q8IWU4_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q8IWU4_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q8IWU4_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q96EB6_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q96EB6_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q96EB6_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q96EB6_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q96EB6_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9LT15_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9LT15_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9LT15_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9LT15_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9LT15_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9ULV1_CIT_model1.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9ULV1_CIT_model2.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9ULV1_CIT_model3.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9ULV1_CIT_model4.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing Q9ULV1_CIT_model5.pdb in /home/rpearson/research/23ValidationSet/CIT3/output_models
+0
+Processing O53512_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O53512_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O53512_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O53512_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O53512_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O60894_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O60894_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O60894_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O60894_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing O60894_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P02925_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P02925_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P02925_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P02925_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P02925_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P03485_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P03485_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P03485_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P03485_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P03485_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P07900_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P07900_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P07900_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P07900_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P07900_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P08195_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P08195_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P08195_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P08195_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P08195_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DMV8_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DMV8_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DMV8_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DMV8_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DMV8_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC2_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC2_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC2_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC2_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC2_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC4_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC4_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC4_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC4_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC4_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC5_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC5_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC5_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC5_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC5_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC9_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC9_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC9_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC9_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P0DTC9_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '8.000-18'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P31645_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '6.000-'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P31645_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P31645_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P31645_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P31645_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P35613_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P35613_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P35613_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P35613_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P35613_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P63096_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P63096_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '.000-252'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P63096_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P63096_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing P63096_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q03431_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q03431_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q03431_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q03431_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q03431_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q15758_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q15758_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q15758_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q15758_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q15758_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q8IWU4_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q8IWU4_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q8IWU4_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q8IWU4_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q8IWU4_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q96EB6_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '52.000  '
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing Q96EB6_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q96EB6_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q96EB6_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q96EB6_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9KL03_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9LT15_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9LT15_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9LT15_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9LT15_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9LT15_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '.000-190'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing Q9ULV1_IT_model1.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9ULV1_IT_model2.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9ULV1_IT_model3.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9ULV1_IT_model4.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q9ULV1_IT_model5.pdb in /home/rpearson/research/23ValidationSet/ITResults2/output_models
+0
+Processing Q8K4Z5_CIT_model1.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/CIT/output_models
+0
+Processing Q8K4Z5_CIT_model2.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/CIT/output_models
+0
+Processing Q8K4Z5_CIT_model3.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/CIT/output_models
+0
+Processing Q8K4Z5_CIT_model4.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/CIT/output_models
+0
+Processing Q8K4Z5_CIT_model5.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/CIT/output_models
+0
+Processing Q8K4Z5_IT_model1.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/IT/output_models
+0
+Processing Q8K4Z5_IT_model2.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/IT/output_models
+0
+Processing Q8K4Z5_IT_model3.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/IT/output_models
+0
+Processing Q8K4Z5_IT_model4.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/IT/output_models
+0
+Processing Q8K4Z5_IT_model5.pdb in /home/rpearson/research/NegValSet/Q8K4Z5_short/IT/output_models
+0
+Processing A0AQQ7_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P00644_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P00644_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P00644_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P00644_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P00644_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q72I44_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q72I44_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q72I44_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q72I44_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q72I44_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q08495_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q08495_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q08495_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q08495_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q08495_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P02417_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P02417_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P02417_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P02417_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P02417_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing O75554_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing O75554_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing O75554_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing O75554_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing O75554_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q816F1_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q816F1_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q816F1_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q816F1_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q816F1_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06745_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06745_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06745_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06745_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06745_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06654_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06654_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06654_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06654_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P06654_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P03034_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P03034_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P03034_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P03034_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P03034_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P48059_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P48059_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P48059_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P48059_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P48059_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q9QUK6_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q9QUK6_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q9QUK6_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q9QUK6_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q9QUK6_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing B4KM86_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P10822_CIT_model1.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P10822_CIT_model2.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P10822_CIT_model3.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P10822_CIT_model4.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing P10822_CIT_model5.pdb in /home/rpearson/research/NegValSet/CIT/output_models
+0
+Processing Q72I44_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q72I44_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q08495_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q08495_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q08495_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q08495_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q08495_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P02417_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P02417_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P02417_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P02417_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P02417_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing O75554_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing O75554_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing O75554_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing O75554_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing O75554_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q816F1_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q816F1_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q816F1_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q816F1_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06745_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06745_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06745_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06654_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06654_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06654_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P03034_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P03034_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P03034_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P48059_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P48059_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P48059_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q9QUK6_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q9QUK6_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q9QUK6_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P02141_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P10822_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P10822_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P10822_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P00644_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P00644_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P00644_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P00644_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P00644_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q72I44_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q72I44_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q72I44_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q816F1_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06745_IT_model1.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06745_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06654_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P06654_IT_model4.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P03034_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P03034_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '17  45.9'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P48059_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P48059_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q9QUK6_IT_model3.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing Q9QUK6_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P10822_IT_model2.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing P10822_IT_model5.pdb in /home/rpearson/research/NegValSet/IT/output_models
+0
+Processing K7QP12_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing K7QP12_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing K7QP12_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing K7QP12_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing K7QP12_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing O14641_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing O14641_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing O14641_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing O14641_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing O14641_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P01034_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P01034_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P01034_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P01034_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P01034_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P10636_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P10636_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P10636_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P10636_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P10636_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P23907_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P23907_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P23907_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P23907_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P23907_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P50416_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P50416_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P50416_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P50416_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P50416_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52750_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52750_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52750_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52750_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52750_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52751_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52751_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52751_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P52751_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '6 -61.36'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P52751_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P58152_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P58152_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P58152_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P58152_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P58152_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P60390_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P60390_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P60390_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P60390_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P60390_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P75960_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P75960_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P75960_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P75960_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P75960_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P85261_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P85261_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P85261_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P85261_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing P85261_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q5W9E8_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q5W9E8_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q5W9E8_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q5W9E8_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q5W9E8_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q95211_CIT_model1.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q95211_CIT_model2.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '42  61.2'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing Q95211_CIT_model3.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '632.000 '
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing Q95211_CIT_model4.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing Q95211_CIT_model5.pdb in /home/rpearson/research/PosValSet/CIT/output_models
+0
+Processing K7QP12_IT_model1.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing K7QP12_IT_model2.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing K7QP12_IT_model3.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing K7QP12_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing K7QP12_IT_model5.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing O14641_IT_model1.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing O14641_IT_model2.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing O14641_IT_model3.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing O14641_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '.750-277'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing O14641_IT_model5.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P01034_IT_model1.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P01034_IT_model2.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P01034_IT_model3.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P01034_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P01034_IT_model5.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P10636_IT_model1.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P10636_IT_model2.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P10636_IT_model3.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P10636_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '043  1'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P10636_IT_model5.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P23907_IT_model1.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P23907_IT_model2.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P23907_IT_model3.pdb in /home/rpearson/research/PosValSet/IT/output_models
+/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py:252: UserWarning: DSSP could not be created due to an error:
+invalid formatted floating point number '69-81573'
+
+  warnings.warn(err)
+Traceback (most recent call last):
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 103, in <module>
+    main(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 79, in main
+    input = make_dssp_from_pdb_file(file)
+  File "/home/rpearson/tools_bin/my_python_scripts/pdb_to_dssp_and_acc.py", line 18, in make_dssp_from_pdb_file
+    dssp_tuple = dssp_dict_from_pdb_file(pdbFile)
+  File "/home/rpearson/.conda/envs/dssp/lib/python3.9/site-packages/Bio/PDB/DSSP.py", line 254, in dssp_dict_from_pdb_file
+    raise Exception("DSSP failed to produce an output")
+Exception: DSSP failed to produce an output
+256
+Processing P23907_IT_model4.pdb in /home/rpearson/research/PosValSet/IT/output_models
+0
+Processing P23907_IT_model5.pdb in /home/rpearson/research/PosValSet/IT/output_models
